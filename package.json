@@ -1,0 +1,30 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "description": "Microservice that saves products in a database, and communicates to another Microservice (Main) through a set of RabbitMQ queues",
+  "main": "index.js",
+  "scripts": {
+    "start": "node build/app.js",
+    "dev": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Juancho997",
+  "license": "ISC",
+  "dependencies": {
+    "amqplib": "^0.10.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "mysql2": "^3.3.1",
+    "reflect-metadata": "^0.1.13",
+    "typeorm": "^0.3.16"
+  },
+  "devDependencies": {
+    "@types/amqplib": "^0.10.1",
+    "@types/cors": "^2.8.13",
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.2.1",
+    "nodemon": "^2.0.22",
+    "typescript": "^5.0.4"
+  }
+}
